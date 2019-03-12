@@ -27,8 +27,8 @@ target_include_directories(test PRIVATE external/rapidjson/include external/date
 
 add_executable(test-sanitize src/test.cpp src/abieos.cpp)
 target_include_directories(test-sanitize PRIVATE external/rapidjson/include external/date/include)
-target_link_libraries(test-sanitize -fno-omit-frame-pointer -fsanitize=address,undefined)
-target_compile_options(test-sanitize PUBLIC -fno-omit-frame-pointer -fsanitize=address,undefined)
+#target_link_libraries(test-sanitize -fno-omit-frame-pointer -fsanitize=address,undefined)
+#target_compile_options(test-sanitize PUBLIC -fno-omit-frame-pointer -fsanitize=address,undefined)
 
 # add_executable(fuzzer src/fuzzer.cpp src/abieos.cpp)
 # target_include_directories(fuzzer PRIVATE external/rapidjson/include external/date/include)
